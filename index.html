@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>LandingPage02</title>
+</head>
+<body>
+    
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logotipo-removebg-preview.png" alt="Logotipo" class="logo"></a>
+            <ul>
+                <li><a href="#"></a>Inicio</li>
+                <li><a href="#"></a>Cardapio</li>
+                <li><a href="#"></a>Novidades</li>
+                <li><a href="#"></a>Pedidos</li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Não é só Sorvete <br> é <span>Sorfea</span></h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati esse officia excepturi nulla enim quaerat rerum, voluptates odit? Veli</p>
+                <a href="#">Saiba Mais</a>
+            </div>
+            <div class="imgBox">
+                <img src="chocolate-removebg-preview.png" alt="Chocolate" class="sorvetes">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="chocolate-removebg-preview.png" onclick="imgSlider('chocolate-removebg-preview.png'); chargeCircleColor('brown')"></li>
+            <li><img src="morango-removebg-preview.png" onclick="imgSlider('morango-removebg-preview.png'); chargeCircleColor('pink')"></li>
+            <li><img src="menta-removebg-preview.png" onclick="imgSlider('menta-removebg-preview.png'); chargeCircleColor('green')"></li>
+        </ul>
+        <ul class="social">
+            <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="instagram.png" alt="instagram"></a></li>
+            <li><a href="#"><img src="twitter.png" alt="twitter"></a></li>
+        </ul>
+    </section>
+    
+
+    <script type="text/javascript">
+        function imgSlider (anything) {
+            document.querySelector ('.sorvetes').src = anything
+        }
+
+        function chargeCircleColor (color) {
+            const circle = document.querySelector ('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
